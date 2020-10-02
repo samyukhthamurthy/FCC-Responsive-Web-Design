@@ -1,0 +1,45 @@
+
+    h3
+    {
+        font-family: Lobster,monospace;
+    }
+    h2
+    {
+        position: relative;
+        bottom: 25px;
+        left: 5px;
+    }
+    p
+    {
+        font-size: 16px;
+        font-family: monospace;
+    }
+    .red-text /*CSS class name*/
+    {
+        color: red;
+    }
+         
+    .thick-blue-border                      
+    {
+        border-color: blueviolet;  /*Border attributes around the image*/
+        border-width: 10px;
+        border-style: groove;
+        border-radius: 10px; /*in shape*/
+        border-radius: 50%; /*Circular images*/
+    }   
+    .violet-background
+    {
+        background-color: violet;
+    }
+    #cat-photo-form      /*Id attribute*/
+    {
+        background-color: goldenrod;
+    }
+    body
+    {   background: linear-gradient(35deg,#CCFFFF,#FFCCCC);
+        font-family:monospace;
+        color: blue;
+    }
+     /*--variable_name to declare CSS variables.*/
+     /*Parameter helps fallback.*/
+     /*Order of declaration of class matters, id attribute overrides classes, style id overrides and finally, !important rises above all. */
