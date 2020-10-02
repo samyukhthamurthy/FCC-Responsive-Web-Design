@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--Title.-->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1"> <!--regardless of device.-->
+       <title>My First Website</title>
+    </head>
+    <body> <!--Body of the webpage with content.-->
+     
+    <a href="#footer">Jump to bottom. </a> <!--Creating internal links within the page, over here it goes to the bottom of the page.-->
+    
+     <link href="C:\Users\samyu\WebDev\intro.css" rel="stylesheet" type="text/css"> <!--Linking CSS to HTML-->
+     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"><!--Using Google API for their library of fonts.-->
+     <!--h1 to h6 are fonts, h1 the biggest and then descending.-->
+     <div>
+     <h1 style="color: green;">My First Website</h1>   <!--Giving colour to heading-->
+     <h2 class="red-text">An HTML Playground</h2>
+     <h3>An HTML Playground</h3>
+     <h4>An HTML Playground</h4>
+     <h5>An HTML Playground</h5>
+     <h6>An HTML Playground</h6>
+    </div>
+
+    This is my very first website and I am <b>extremely excited!!!!!</b>
+    <a href="#ParagraphEnd-header">Go to the content end.</a> <!--Creating a link to move to another section of the page.-->
+    <div>
+    <p class="p"> <!--Paragraph begins.-->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p> <!--Paragraph ends.-->
+    </div>
+    <div>
+    <p>
+        I am M.S.Samyukhtha, and I'm 19 years old. I am studying in VIT for my
+        B.Tech in Computer Science and Engineering and I will graduate in the year 2023.
+    </p>
+    </div>
+    Guess the Gibberish.<br><br>   <!--break tag: void elements as no closing tag required.-->
+    <b><i><u><em>Hula hula hoop.   <!--em: emphasis tag.-->
+    Voila voila.</em></u></i></b>
+    <hr><!--horizontal line.-->
+    <strong>Shakira</strong>  <!--almost same as bold tags.-->
+    <br>
+    <a href="https://www.covid19india.org" target="blank">Coronavirus.</a>   <!--Target="blank" for external links.-->  
+
+    <br>
+    <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
+        <input type="text" required placeholder="Let's see"> <!--1)To input search text (reqd makes it necessary before submission) and submit data using forms.-->
+        <button type="submit">Submit.</button>
+        <!--Checked keyword can be used for both radio buttons and checkboxes, but among them, only 1 at a time.-->
+        <!--Radio buttons. -->
+        <label for="indoor">
+            <input id="indoor" type="radio" name="indoor-outdoor" checked> Indoor 
+        </label>
+        <label for="outdoor">
+            <input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor
+        </label>
+        <br>
+        <!--Checkbox-->
+        <label for="Loving">
+            <input id="Loving" value="Loving" type="checkbox" name="Personality"> Loving <!--Value attribute to ensure the default response 'on' isn't chosen.-->
+        </label>
+        <br>
+        <label for="Caring">
+            <input id="Caring" type="checkbox" name="Personality"> Caring
+        </label>
+        <br>
+        <textarea placeholder="Allergies"></textarea><br> <!--2)Second way of adding placeholder text in search bar.-->
+    </form> 
+    
+    <br>
+    Empty photo.
+    <br>
+    <img src="https://via.placeholder.com/600X300" border="10" class="thick-blue-border" alt="Sample image."> <!--Alt text appears when the image doesn't load.-->
+    <br>
+    <h1 id="ParagraphEnd-header">ParagraphEnd</h1> <!--Content placed to reach when the link is activated. (For Paragraph end in this case)-->
+    
+    <!--Dividing tag-->
+    <div class="violet-background"> 
+    <ul> <!--Unordered lists.-->
+        <li>apples</li> <!--List header.-->
+          <ul>
+              <li>Golden delicious</li>   <!--nesting of lists.-->
+              <li>Granny smith</li>
+              <li>Gala</li>
+          </ul>
+        <li>oranges</li>
+        <li>pineapples</li>
+        <li>mangoes</li>
+    </ul>
+    </div>
+    <table border="10" cellpadding="10" cellspacing="0">
+        <tr>
+            <th></th>  <!--Table header-->
+            <th>Month</th>
+            <th>Rent</th>
+            <th colspan="2">Utilities</th> <!--Dividing a column by 2.--> 
+            <th>Groceries</th>
+            <th>Eating out</th>
+            <th>Entertainment</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Fall</td> <!--Table data; inserting 3 rows.-->
+            <td>June</td>
+            <td>$1500</td>
+            <td>$100</td>
+            <td>$50</td>
+            <td>$350</td>
+            <td>$100</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>$1500</td>
+            <td>$100</td>
+            <td>$50</td>
+            <td>$350</td>
+            <td>$100</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>August</td>
+            <td>$1500</td>
+            <td>$100</td>
+            <td>$50</td>
+            <td>$350</td>
+            <td>$100</td>
+            <td>$50</td>
+        </tr>
+    </table>
+
+    <!--Turning an image into a link.-->
+    <a href="https://google.com"><img src="https://bit.ly/fcc-relaxing-cat" alt="Cute kitty."></a>
+    </body>
+    <footer id="footer">&copy Copyright Cat Photo App. </footer> <!--Footer content.-->
+</html>
+<!--Can use only one anchor element at a time.--> 
+
+<!--#Dead link: <a href="#">-->
