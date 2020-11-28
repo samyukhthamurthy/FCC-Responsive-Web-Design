@@ -1,0 +1,30 @@
+<style>
+    #box-container {
+      background: bisque;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    #box-1 {
+      background-color: dodgerblue;
+      width: 50%;
+      height: 50%;
+      flex-shrink: 1;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 50%;
+      height: 50%;
+      flex-grow: 1;
+    }
+  </style>
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+  <!--flex: flex-grow flex-shrink flex-basis-->
+  <!--Align-items: For all, Align-self: container specific;-->
