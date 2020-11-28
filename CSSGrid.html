@@ -1,0 +1,53 @@
+<style>
+    .d1{background:LightSkyBlue;}
+    .d2{background:LightSalmon;}
+    .d3{background:PaleTurquoise;}
+    .d4{background:LightPink;}
+    .d5{background:PaleGreen;}
+    /*Container-parent, items-children*/
+    .container {
+      font-size: 40px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      /*Some grid container properties*/
+      grid-template-columns: 100px 100px 100px; /*3 columns*/
+      grid-template-rows: 50px;
+      grid-template-columns: auto 50px 10% 2fr 1fr; /*auto-Automatic setup*/
+      grid-template-columns: 1fr 200px 2fr; /*fr-Fractional portion of the container*/
+      grid-gap: 10px 20px; /*grid-gap: grid-row-gap grid-column-gap*/
+      justify-items: center;
+      grid-template-areas: "header header header"
+                           ". content content"
+                           "footer footer footer";
+      }
+    .container2{
+        background: lightblue;
+    }
+    .item5 {
+      background: PaleGreen;
+      grid-row: 1/2; /*First row only consumed*/
+      grid-column: 2/4; /*last 2 columns consumed*/
+      /*grid-area: start horizontal line/start vertical line/end horizontal line/end vertical line*/
+      }
+    .item2
+    {
+      background: crimson;
+      justify-self: center; /*start/center/end*/
+      grid-area: header;
+    }
+  </style>
+  
+  <div class="container">
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+  </div>
+  <div class="container2">
+    <div class="item5"></div>
+    <div class="item2"></div>
+  </div>
+  
+  
